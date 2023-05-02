@@ -18,3 +18,11 @@ test('peek on stack with two or more elements returns the top element', () => {
     expect(stack.peek()).toBe(42);
 });
 
+test('pushing an element adds it to the top of the stack', () => {
+    stack.push(1);
+    stack.push(2);
+    stack.push(3);
+    expect(stack.peek()).toBe(3);
+  });
+
+

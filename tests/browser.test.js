@@ -33,3 +33,9 @@ describe('Clicking "Pusha till stacken"', () => {
 		await alert.accept();
 	});
 });
+
+test('The <h1> tag should have more than 10 characters', async () => {
+	let h1Text = await driver.findElement(By.tagName('h1')).getText();
+	expect(h1Text.length).toBeGreaterThan(10);
+  });
+  
