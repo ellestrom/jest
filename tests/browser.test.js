@@ -1,5 +1,5 @@
 const jasmine = require('jasmine');
-np const { Builder, By, until } = require('selenium-webdriver');
+const { Builder, By, until } = require('selenium-webdriver');
 require('geckodriver');
 
 const fileUnderTest = 'file://' + __dirname.replace(/ /g, '%20') + '/../dist/index.html';
