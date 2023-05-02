@@ -1,3 +1,5 @@
+const Jasmine = require('jasmine');
+const jasmine = new Jasmine();
 const { Builder, By, until } = require('selenium-webdriver');
 require('geckodriver');
 
