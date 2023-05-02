@@ -26,3 +26,9 @@ test('pushing an element adds it to the top of the stack', () => {
   });
 
 
+  test('pop should remove and return the top element of the stack', () => {
+    stack.push(1);
+    stack.push(2);
+    expect(stack.pop()).toBe(2);
+    expect(stack.peek()).toBe(1);
+  });
